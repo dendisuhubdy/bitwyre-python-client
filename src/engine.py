@@ -1,5 +1,5 @@
-from pyfix.event import EventManager
-from pyfix.journaler import Journaler
+from event import EventManager
+from journaler import Journaler
 
 class FIXEngine(object):
     def __init__(self, journalfile = None):

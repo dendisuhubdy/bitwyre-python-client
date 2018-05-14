@@ -1,9 +1,9 @@
 import logging
 import socket
-from pyfix.journaler import DuplicateSeqNoError
-from pyfix.session import FIXSession
-from pyfix.connection import FIXEndPoint, ConnectionState, MessageDirection, FIXConnectionHandler
-from pyfix.event import FileDescriptorEventRegistration, EventType
+from journaler import DuplicateSeqNoError
+from session import FIXSession
+from connection import FIXEndPoint, ConnectionState, MessageDirection, FIXConnectionHandler
+from event import FileDescriptorEventRegistration, EventType
 
 class FIXServerConnectionHandler(FIXConnectionHandler):
     def __init__(self, engine, protocol, sock=None, addr=None, observer=None):

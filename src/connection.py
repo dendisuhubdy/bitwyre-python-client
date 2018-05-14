@@ -1,12 +1,12 @@
 import importlib
 import sys
-from pyfix.codec import Codec
-from pyfix.journaler import DuplicateSeqNoError
-from pyfix.message import FIXMessage, MessageDirection
+from codec import Codec
+from journaler import DuplicateSeqNoError
+from message import FIXMessage, MessageDirection
 
-from pyfix.session import *
+from session import *
 from enum import Enum
-from pyfix.event import FileDescriptorEventRegistration, EventType, TimerEventRegistration
+from event import FileDescriptorEventRegistration, EventType, TimerEventRegistration
 
 class ConnectionState(Enum):
     UNKNOWN = 0
